@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Hollato';
+    src: url(../font/HollatoPersonalUse/Hollato.ttf);
+}
+body{
+    background-image: url(../img/heartBg.png);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introduction{
+background-color: #fbf2d5;
+width: 400px;
+height: auto;
+display: block;
+padding-bottom: 50px;
+padding-top: 30px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: 20px;
+margin-top: 10px;
+text-align: center;
+border-radius: 10px;
+}
+.introduction:hover{
+    background-color: darkgray;
+}
+h1{
+    color:#ffb5b5;
+    margin-bottom: 20px;
+    font-family: 'Hollato', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    color: hsl(249, 96%, 34%);
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+h2:hover{
+    color: fuchsia;
+}
+h3{
+    color: #5c5470;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+h3:hover{
+    color: rgb(228, 60, 14);  
+}
+h4{
+    color: hsl(204, 70%, 53%);
+    font-size: 22px;
+}
+h4:hover{
+    color: darkorchid;
+}
+h5{
+    color:deeppink;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+h5:hover{
+    color: magenta;
+}
+.colors-design{
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-top: 10px;
+     border-radius: 10px;
+}
+.footerMain{
+    margin-top: 20px;
+    padding: 2%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.companyStory{
+    align-items: center;
+}
+/* media queries: Mobile phones*/
+@media(max-width: 360px){
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .introduction{
+        width: 20rem;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-top: 20px;
+        display: block;
+    }
+    .colors-design{
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .girl{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .footerMain{
+        display: block;
+        text-align: center;
+    }
+    .companyStory{
+        font-size:18px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .companyStory ul{
+        list-style: none;
+    }
+    .companyStory ol{
+        list-style: none;
+    }
+}
+@media(max-width: 414px){
+    h1{
+    padding-top: 4rem;
+    }
+    .colors-design{
+        display: block;
+        text-align: center;
+    }
+    .introduction{
+        display: block;
+        width: 24rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        padding-left: 0px;
+        padding-right:0px;
+    }
+    .girl{
+        display: block;
+        margin-top: 50px;
+    }
+    .footerMain{
+        text-align: center;
+        display: block;
+    }
+    .footerMain p{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom:20px;
+    }
+    .companyStory{
+        margin-bottom:20px;
+    }
+}
+ /*Media Queries: Desktop*/
+@media(min-width: 720px) and (max-width: 1024px){
+    .footerMain{
+        display: flex;
+    }
+    .companyStory ol{
+        list-style: none;
+    }
+    .companyStory li{
+        list-style: none;
+    }
+    .companyStory h3{
+        font-size: 18px;
+    }
+}
+/*Media Queries: Tables*/
+@media(min-width: 768px) and (max-width: 1024px){
+        h1{
+            padding-top: 60px;
+        }
+        .colors-design{
+            margin-top: 35px;
+        }
+        .introduction{
+            margin-left: 10px;
+        }
+        .girl{
+            margin-right: 10px;
+        }
+        .companyStory h3{
+            font-size: 20px;
+        }
+        .companyStory{
+            width: 29%;
+            text-align: center;
+        }
+        footer{
+            padding-top: 35px;
+        }
+}
+
